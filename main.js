@@ -161,3 +161,13 @@ const inventory = [
     sold: 8,
   },
 ];
+
+//Hoeveel exemplaren moeten we nog verkopen? Schrijf een functie die dit berekent.
+//functie scrhijven
+// const exemnplarenTv = []
+//
+// function forSale(originalStock, sold){
+//   const rest = originalStock - sold
+//   return rest
+// }
+// console.log(forSale(inventory.brand))
