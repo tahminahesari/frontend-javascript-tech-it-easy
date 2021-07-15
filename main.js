@@ -171,3 +171,7 @@ const inventory = [
 //   return rest
 // }
 // console.log(forSale(inventory.brand))
+
+const toSell = inventory.map ((inventory) => {
+  return inventory.originalStock - inventory.sold
+})
