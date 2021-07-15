@@ -179,13 +179,16 @@ for (let i = 0; i < inventory.length; i++){
   //for loop die looped over alle tv's heen, dus elke afzonderlijke tv
   // met inventory[i]
   //console.log(inventory[i]);
-  console.log(inventory[i].originalStock - inventory[i].sold)
+ // console.log(inventory[i].originalStock - inventory[i].sold)
 }
 
 let total = 0
 for (let i = 0; i < inventory.length; i++) {
   total = total + inventory[i].originalStock - inventory[i].sold
-  console.log(total);
 
 }
+//console.log(total);
 
+const mangoMango = document.getElementById("nogVerkopen")
+console.log(mangoMango)
+mangoMango.textContent = "de hoeveelheid is: " + total
