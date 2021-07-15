@@ -161,7 +161,6 @@ const inventory = [
     sold: 8,
   },
 ];
-
 //Hoeveel exemplaren moeten we nog verkopen? Schrijf een functie die dit berekent.
 //functie scrhijven
 // const exemnplarenTv = []
@@ -172,6 +171,21 @@ const inventory = [
 // }
 // console.log(forSale(inventory.brand))
 
-const toSell = inventory.map ((inventory) => {
-  return inventory.originalStock - inventory.sold
-})
+// const toSell = inventory.map ((inventory) => {
+//   return inventory.originalStock - inventory.sold
+// })
+
+for (let i = 0; i < inventory.length; i++){
+  //for loop die looped over alle tv's heen, dus elke afzonderlijke tv
+  // met inventory[i]
+  //console.log(inventory[i]);
+  console.log(inventory[i].originalStock - inventory[i].sold)
+}
+
+let total = 0
+for (let i = 0; i < inventory.length; i++) {
+  total = total + inventory[i].originalStock - inventory[i].sold
+  console.log(total);
+
+}
+
